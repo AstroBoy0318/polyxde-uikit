@@ -10,7 +10,7 @@ import Button from "../../components/Button/Button";
 import IconButton from "../../components/Button/IconButton";
 import MenuButton from "./MenuButton";
 import * as IconModule from "./icons";
-import { socials, MENU_ENTRY_HEIGHT } from "./config";
+import { MENU_ENTRY_HEIGHT } from "./config";
 import { PanelProps, PushedProps } from "./types";
 
 interface Props extends PanelProps, PushedProps {}
@@ -65,6 +65,7 @@ const PanelFooter: React.FC<Props> = ({
   langs,
   setLang,
   priceLink,
+  socials
 }) => {
   if (!isPushed && isMobile) {
     return (
@@ -88,10 +89,10 @@ const PanelFooter: React.FC<Props> = ({
           <Skeleton width={80} height={24} />
         )}
         <Flex>
-          {socials.map((social, index) => {
+          {socials != null && socials.map((social, index) => {
             const Icon = Icons[social.icon];
             const iconProps = { width: "24px", color: "textSubtle", style: { cursor: "pointer" } };
-            const mr = index < socials.length - 1 ? "24px" : 0;
+            const mr = index < socials.length - 1 ? "10px" : 0;
             /* if (social.items) {
               return (
                 <Dropdown key={social.label} position="top" target={<Icon {...iconProps} mr={mr} />}>

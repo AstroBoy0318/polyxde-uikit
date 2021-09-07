@@ -70,7 +70,8 @@ const Menu: React.FC<NavProps> = ({
   priceLink,
   profile,
   children,
-  cakeContract
+  cakeContract,
+  socials
 }) => {
   const { isXl } = useMatchBreakpoints();
   const isMobile = isXl === false;
@@ -132,7 +133,8 @@ const Menu: React.FC<NavProps> = ({
             cakePriceUsd={cakePriceUsd}
             pushNav={setIsPushed}
             links={links}
-            priceLink={priceLink} />
+            priceLink={priceLink}
+            socials={socials} />
         }
         <Flex>
           <UserBlock account={account} login={login} logout={logout} cakeContract={cakeContract} />
@@ -155,6 +157,7 @@ const Menu: React.FC<NavProps> = ({
             pushNav={setIsPushed}
             links={links}
             priceLink={priceLink}
+            socials={socials}
           />
         }
         <Inner isPushed={isPushed} showMenu={showMenu}>
@@ -175,6 +178,7 @@ const Menu: React.FC<NavProps> = ({
             pushNav={setIsPushed}
             links={links}
             priceLink={priceLink} 
+            socials={socials}
         />
       }
     </Wrapper>

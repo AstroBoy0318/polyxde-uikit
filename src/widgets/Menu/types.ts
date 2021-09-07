@@ -37,6 +37,12 @@ export interface MenuEntry {
   calloutClass?: string;
   initialOpenState?: boolean;
 }
+export interface SocialEntry {
+  label: string;
+  icon: string;
+  items?: SocialEntry[];
+  href?: string;
+}
 
 export interface PanelProps {
   isDark: boolean;
@@ -47,6 +53,7 @@ export interface PanelProps {
   langs: LangType[];
   setLang: (lang: LangType) => void;
   links: Array<MenuEntry>;
+  socials: Array<SocialEntry>;
   priceLink: string;
 }
 
