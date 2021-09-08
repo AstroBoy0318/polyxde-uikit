@@ -2621,7 +2621,7 @@ var StyledNav = styled__default['default'].nav(templateObject_2$f || (templateOb
     var theme = _a.theme;
     return theme.nav.background;
 });
-var BodyWrapper = styled__default['default'].div(templateObject_3$8 || (templateObject_3$8 = __makeTemplateObject(["\n  position: relative;\n  display: flex;\n  min-height: calc(100vh - 112px);\n"], ["\n  position: relative;\n  display: flex;\n  min-height: calc(100vh - 112px);\n"])));
+var BodyWrapper = styled__default['default'].div(templateObject_3$8 || (templateObject_3$8 = __makeTemplateObject(["\n  position: relative;\n  display: flex;\n  min-height: calc(100vh - 50px);\n"], ["\n  position: relative;\n  display: flex;\n  min-height: calc(100vh - 50px);\n"])));
 var Inner = styled__default['default'].div(templateObject_4$3 || (templateObject_4$3 = __makeTemplateObject(["\n  flex-grow: 1;\n  transform: translate3d(0, 0, 0);\n"], ["\n  flex-grow: 1;\n  transform: translate3d(0, 0, 0);\n"])));
 var MobileOnlyOverlay = styled__default['default'](Overlay)(templateObject_5$1 || (templateObject_5$1 = __makeTemplateObject(["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"], ["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"])), function (_a) {
     var theme = _a.theme;
@@ -2781,8 +2781,8 @@ var baseColors = {
 var brandColors = {
     binance: "#F0B90B",
 };
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#131a35", backgroundDisabled: "#E9EAEB", contrast: "#191326", invertedContrast: "#FFFFFF", input: "#eeeaf4", tertiary: "#EFF4F5", text: "#fff", textDisabled: "#BDC2C4", textSubtle: "#fff", borderColor: "#E9EAEB", card: "linear-gradient(245.22deg, rgb(218, 46, 239) 7.97%, rgb(43, 106, 255) 49.17%, rgb(57, 208, 216) 92.1%)", gradients: {
-        bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#131a35", backgroundDisabled: "#3c3742", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#483f5a", tertiary: "#353547", text: "#fff", textDisabled: "#666171", textSubtle: "#fff", borderColor: "#524B63", card: "linear-gradient(245.22deg, rgb(218, 46, 239) 7.97%, rgb(43, 106, 255) 49.17%, rgb(57, 208, 216) 92.1%)", gradients: {
+        bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
     } });
 var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#9A6AFF", background: "#131a35", backgroundDisabled: "#3c3742", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#483f5a", primaryDark: "#0098A1", tertiary: "#353547", text: "#fff", textDisabled: "#666171", textSubtle: "#fff", borderColor: "#524B63", card: "linear-gradient(245.22deg, rgb(218, 46, 239) 7.97%, rgb(43, 106, 255) 49.17%, rgb(57, 208, 216) 92.1%)", gradients: {
         bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",

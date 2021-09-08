@@ -39,7 +39,7 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
 const BodyWrapper = styled.div`
   position: relative;
   display: flex;
-  min-height: calc(100vh - 112px);
+  min-height: calc(100vh - 50px);
 `;
 
 const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
